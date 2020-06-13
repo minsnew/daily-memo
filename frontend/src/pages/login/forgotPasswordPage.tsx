@@ -12,6 +12,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Copyright from '../../components/copyright/copyright';
 
+// custom style
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// fprgpt password component
+// forgot password component
 const ForgotPassword: React.FC = () => {
   const classes = useStyles();
 

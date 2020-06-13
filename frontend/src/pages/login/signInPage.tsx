@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory }  from "react-router-dom";
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -15,6 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Copyright from '../../components/copyright/copyright';
 
+// custom style
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -35,15 +36,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-//
-const Singin = () => {
-  const history = useHistory();
-  history.push("/memo");
-}
 
-// login page component
+// signin page component
 const SignInPage: React.FC = () => {
+  const history = useHistory();
   const classes = useStyles();
+
+  // action - signin
+  const singin = () => {
+    history.push("/memo");
+  }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -86,7 +88,7 @@ const SignInPage: React.FC = () => {
           variant="contained"
           color="primary"
           className={classes.submit}
-          onClick={Singin}
+          onClick={singin}
         >
           Sign In
         </Button>

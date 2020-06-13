@@ -5,8 +5,8 @@ import SignInPage from '../pages/login/signInPage';
 import SignUpPage from '../pages/login/signUpPage';
 import ForgotPassword from '../pages/login/forgotPasswordPage';
 import MemoPage from '../pages/memo/memoPage';
-import './App.css';
 
+// app component
 function App() {
   return (
     <BrowserRouter>

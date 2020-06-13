@@ -14,6 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Copyright from '../../components/copyright/copyright';
 
+// custom style
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -34,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// signup component
 const SignUpPage: React.FC = () => {
   const classes = useStyles();
 
